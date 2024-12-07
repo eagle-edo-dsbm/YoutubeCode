@@ -171,11 +171,17 @@ a{
     pointer-events: auto;
 }   
 
-
 .Ki{
     border-radius: 100%;
 }
 
 .lox{
     font-size: 15em
+}
+
+.on a{
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    color: rgb(0,255,0);
 }
