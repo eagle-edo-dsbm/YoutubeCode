@@ -171,3 +171,11 @@ a{
     pointer-events: auto;
 }   
 
+
+.Ki{
+    border-radius: 100%;
+}
+
+.lox{
+    font-size: 15em
+}
