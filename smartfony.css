@@ -1,0 +1,68 @@
+body{
+    background-color: rgb(120, 0, 230);
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu{
+    position: sticky;
+    top: 0;
+    display: block;
+    background-color: rgb(60, 0, 115);
+    border: none;
+    width: 100%;
+    padding: 20px;
+    font-size: 25px;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-menu:hover{
+    background-color: rgb(100,0,210);
+}
+
+.smartphones{
+    margin: 20px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.smartphone{
+    background-color: white;
+    text-align: center;
+    border-radius: 8px;
+    box-sizing: border-box;
+    max-width: 300px;
+    height: auto;
+    transition: .3s;
+    padding: 15px;
+}
+
+.smartphone:hover{
+    transform: translate(10%, 10%) scale(1.2);
+    z-index: 2;
+    box-shadow: -7px 0 3px 0 rgba(0, 0, 0, 0.5),
+    7px 0 3px 0 rgba(0, 0, 0, 0.5),
+    0 7px 3px 0 rgba(0, 0, 0, 0.5),
+    0 -7px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+.smartphone p, h2, .iphone-image{
+    margin: auto;
+    padding: auto;
+    text-wrap: wrap;
+}
+
+
+.iphone-image{
+    width: 100%;
+    height: auto;  
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}

@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(120,0,230);
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+.main-menu{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgb(60,0,115);
+    border: none;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.main-menu:hover{
+    background-color: rgb(100,0,210);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.tablets{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.tablet{
+    background-color: white;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+
+.tablet:hover{
+    transform: translate(10%, 10%) scale(1.2); 
+    box-shadow: 8px 0 3px 0 rgba(0,0,0,.6),
+    -8px 0 3px 0 rgba(0,0,0,.6),
+    0 6px 3px 0 rgba(0,0,0,.6),
+    8px -6px 3px 0 rgba(0,0,0,.6);
+    z-index: 2;
+}
+
+
+.tablet .tablet-image, p, .name{
+    margin: auto;
+    padding: 10px;
+
+}

@@ -1,0 +1,173 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(120, 0, 230);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    user-select: none;
+    max-height: auto;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
+
+.menu{
+    position: sticky;
+    top: 0;
+    width: auto;
+    background-color: rgb(90, 0, 200);
+    height: 40px;
+}
+
+.burger{
+    display: inline-block;
+    background-color: rgb(170,20,170);
+    height: 40px;
+    width: 25%;
+    position: sticky;
+}
+
+.burger:hover{
+    background-color: rgb(130,0,250);
+}
+
+.burger-line{
+    display: block;
+    background-color: snow;
+    height: 4px;
+    width: 25px;
+    margin: 5px;
+    border-radius: 8px;
+    transform: translateY(50%);
+    transition: all 0.4s ease;
+}
+
+
+
+
+.burger:hover .burger-line:nth-child(1){
+    transform: translateY(20px) rotateZ(180deg);
+}
+.burger:hover .burger-line:nth-child(2){
+    transform: translateY(50%) rotate(180deg);
+}
+.burger:hover .burger-line:nth-child(3){
+    transform: translateY(-15px) rotateZ(180deg);
+}
+
+.menu {
+    position: relative;
+}
+
+
+.categories-text{
+    position: absolute;
+    top: -25px;
+    left: 40px;
+    color: white;
+}
+
+.categories{
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    box-shadow: 5px 0 3px 0 rgba(0,0,0,.3);
+    transition: 0.3s;
+}
+
+.burger:hover .categories{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.subCategories{
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s;
+    background-color: white;
+    left: 100%;
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    border-radius: 8px;
+    box-shadow: -5px 0 3px 0 rgba(0,0,0,.3);
+}
+
+.subSubCategories{
+    background-color: white;
+    border-radius: 8px;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    box-shadow: -5px 0 3px 0 rgba(0,0,0,.3);
+}
+
+.mainCategory, .subCategory, .subSubCategory, .card{
+    position: relative;
+    padding: 5px;
+    margin: 5px;
+}
+
+.mainCategory:hover .subCategories, .subSubCategory:hover .subSubCategories{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.subCategory:hover .subSubCategories{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.card{
+    position: absolute;
+    opacity: 0;
+    left:95%;
+    max-height: 300px;
+    width: 400px;
+    top: 0;
+    box-shadow: -3px -2px 3px 0 rgba(255, 0,0,.3);
+    background-color: #fff;
+    transition: 0.3s;
+    pointer-events: none;
+    overflow-y:auto;
+    max-height: 400px;
+    border-radius: 8px;
+}
+
+
+
+.iphone-image, .tablet-image, .accessories-image, .laptop-image, .pc-image, .pc-accessories,
+.tv-image, .headphones-image, .speakers-image, .skirt-image, .top-image, .dress-image,
+.jeverly-image, .bag-image, .clock-image, .sofa-image, .table-image, .bed-image,
+.grill-image, .garden-decor-image, .street-lamp-image, .vc-image, .fr-image,
+.roman-image, .fantasy-image, .poetry-image, .pens-image, .organizer-image, .paper-image, .fluff-image, .tfb-image, .eduToys-image,
+.puzzle-image, .chess-image, .cg-image, .bp-image, .pencil-case-image, .lb-image{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.card-text{
+    font-size: 15px;
+}
+
+.subSubCategory:hover .card{
+    opacity: 1;
+    pointer-events: auto;
+}   
+
